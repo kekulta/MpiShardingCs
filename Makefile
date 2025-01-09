@@ -11,22 +11,30 @@ build: *.cs
 	dotnet build
 
 initdb:
+	initdb -D ./shards/idprovider
+	echo "unix_socket_directories = '/tmp'" > ./shards/idprovider/postgresql.conf
 	initdb -D ./shards/shard-1
 	echo "unix_socket_directories = '/tmp'" > ./shards/shard-1/postgresql.conf
 	initdb -D ./shards/shard-2
 	echo "unix_socket_directories = '/tmp'" > ./shards/shard-2/postgresql.conf
 
 createdb:
+	createdb -h localhost -p 5432 -U kekulta id_provider_db
 	createdb -h localhost -p 5433 -U kekulta mpi_db
 	createdb -h localhost -p 5434 -U kekulta mpi_db
 
 startdb:
+	pg_ctl -D ./shards/idprovider -o "-p 5432" -l logfile start
 	pg_ctl -D ./shards/shard-1 -o "-p 5433" -l logfile start
 	pg_ctl -D ./shards/shard-2 -o "-p 5434" -l logfile start
 
 stopdb:
+	pg_ctl -D ./shards/idprovider -o "-p 5432" -l logfile stop
 	pg_ctl -D ./shards/shard-1 -o "-p 5433" -l logfile stop
 	pg_ctl -D ./shards/shard-2 -o "-p 5434" -l logfile stop
+
+idp:
+	psql -h localhost -p 5432 id_provider_db
 
 shard-1:
 	psql -h localhost -p 5433 mpi_db

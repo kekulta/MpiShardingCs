@@ -6,20 +6,27 @@ using Npgsql;
 
 public class Shard {
     private static int[] ports = {5433, 5434};
+    private static int idPort = 5432;
     private static int count = ports.Count();
     private static string username = "kekulta";
+    private static string db = "mpi_db";
+    private static string idDb = "id_provider_db";
 
     private Conn conn;
+    private Conn idConn;
     private UserDao dao;
+    private IdProvider idProvider;
     private Intracommunicator comm;
     private Stopwatch stopWatch = new Stopwatch();
 
     public Shard(Intracommunicator comm) {
-        conn = new Conn(ports[comm.Rank], username);
-        dao = new UserDao(conn);
-        this.comm = comm;
+        conn = new Conn(ports[comm.Rank], db, username);
         conn.Open();
-        dao.EnsureTableCreated();
+        idConn = new Conn(idPort, idDb, username);
+        idConn.Open();
+        idProvider = new IdProvider(idConn, comm.Rank);
+        dao = new UserDao(conn, idProvider);
+        this.comm = comm;
 
         Console.WriteLine("Process {0} opened connection on port {1} as {2}",
                 comm.Rank, ports[comm.Rank], username);
@@ -89,6 +96,7 @@ public class Shard {
 
     public void Close() {
         conn.Close();
+        idConn.Close();
     }
 
     public void Measured(Action func) {

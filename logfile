@@ -130,3 +130,84 @@
 2025-01-09 17:42:24.477 GMT [211086] STATEMENT:  INSERT INTO id_provider() VALUES();
 2025-01-09 17:44:51.400 GMT [159271] LOG:  checkpoint starting: time
 2025-01-09 17:44:55.973 GMT [159271] LOG:  checkpoint complete: wrote 46 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.525 s, sync=0.036 s, total=4.573 s; sync files=35, longest=0.002 s, average=0.002 s; distance=179 kB, estimate=32028 kB; lsn=0/9C70EB0, redo lsn=0/9C70E78
+2025-01-09 17:49:52.073 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 17:49:52.903 GMT [159271] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.806 s, sync=0.013 s, total=0.830 s; sync files=9, longest=0.004 s, average=0.002 s; distance=38 kB, estimate=28829 kB; lsn=0/9C7A968, redo lsn=0/9C7A930
+2025-01-09 18:16:16.182 GMT [159270] LOG:  received fast shutdown request
+2025-01-09 18:16:16.186 GMT [159270] LOG:  aborting any active transactions
+2025-01-09 18:16:16.188 GMT [159270] LOG:  background worker "logical replication launcher" (PID 159276) exited with exit code 1
+2025-01-09 18:16:16.188 GMT [159271] LOG:  shutting down
+2025-01-09 18:16:16.190 GMT [159271] LOG:  checkpoint starting: shutdown immediate
+2025-01-09 18:16:16.195 GMT [159271] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.007 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=25946 kB; lsn=0/9C7AA18, redo lsn=0/9C7AA18
+2025-01-09 18:16:16.207 GMT [159270] LOG:  database system is shut down
+2025-01-09 18:16:16.291 GMT [159279] LOG:  received fast shutdown request
+2025-01-09 18:16:16.292 GMT [159279] LOG:  aborting any active transactions
+2025-01-09 18:16:16.299 GMT [159279] LOG:  background worker "logical replication launcher" (PID 159285) exited with exit code 1
+2025-01-09 18:16:16.300 GMT [159280] LOG:  shutting down
+2025-01-09 18:16:16.301 GMT [159280] LOG:  checkpoint starting: shutdown immediate
+2025-01-09 18:16:16.309 GMT [159280] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.010 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=33990 kB; lsn=0/86306D8, redo lsn=0/86306D8
+2025-01-09 18:16:16.346 GMT [159279] LOG:  database system is shut down
+2025-01-09 18:17:16.259 GMT [214323] LOG:  starting PostgreSQL 16.3 on x86_64-redhat-linux-gnu, compiled by gcc (GCC) 14.1.1 20240522 (Red Hat 14.1.1-4), 64-bit
+2025-01-09 18:17:16.259 GMT [214323] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-01-09 18:17:16.259 GMT [214323] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-01-09 18:17:16.261 GMT [214323] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-01-09 18:17:16.264 GMT [214326] LOG:  database system was shut down at 2025-01-09 18:17:06 GMT
+2025-01-09 18:17:16.268 GMT [214323] LOG:  database system is ready to accept connections
+2025-01-09 18:17:16.397 GMT [214332] LOG:  starting PostgreSQL 16.3 on x86_64-redhat-linux-gnu, compiled by gcc (GCC) 14.1.1 20240522 (Red Hat 14.1.1-4), 64-bit
+2025-01-09 18:17:16.397 GMT [214332] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2025-01-09 18:17:16.397 GMT [214332] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-01-09 18:17:16.398 GMT [214332] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2025-01-09 18:17:16.402 GMT [214335] LOG:  database system was shut down at 2025-01-09 18:17:06 GMT
+2025-01-09 18:17:16.406 GMT [214332] LOG:  database system is ready to accept connections
+2025-01-09 18:17:16.551 GMT [214341] LOG:  starting PostgreSQL 16.3 on x86_64-redhat-linux-gnu, compiled by gcc (GCC) 14.1.1 20240522 (Red Hat 14.1.1-4), 64-bit
+2025-01-09 18:17:16.551 GMT [214341] LOG:  listening on IPv4 address "127.0.0.1", port 5434
+2025-01-09 18:17:16.551 GMT [214341] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-01-09 18:17:16.552 GMT [214341] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5434"
+2025-01-09 18:17:16.556 GMT [214344] LOG:  database system was shut down at 2025-01-09 18:17:08 GMT
+2025-01-09 18:17:16.560 GMT [214341] LOG:  database system is ready to accept connections
+2025-01-09 18:18:43.384 GMT [214649] ERROR:  syntax error at or near "BIGSERIAL" at character 85
+2025-01-09 18:18:43.384 GMT [214649] STATEMENT:  CREATE TABLE IF NOT EXISTS id_provider (
+	                                id integer BIGSERIAL PRIMARY KEY,
+	                                shard integer
+	                                )
+2025-01-09 18:18:43.386 GMT [214648] ERROR:  syntax error at or near "BIGSERIAL" at character 85
+2025-01-09 18:18:43.386 GMT [214648] STATEMENT:  CREATE TABLE IF NOT EXISTS id_provider (
+	                                id integer BIGSERIAL PRIMARY KEY,
+	                                shard integer
+	                                )
+2025-01-09 18:20:53.295 GMT [214939] FATAL:  database "mpi_db" does not exist
+2025-01-09 18:22:16.337 GMT [214324] LOG:  checkpoint starting: time
+2025-01-09 18:22:16.502 GMT [214333] LOG:  checkpoint starting: time
+2025-01-09 18:22:16.597 GMT [214342] LOG:  checkpoint starting: time
+2025-01-09 18:22:58.573 GMT [215113] ERROR:  syntax error at or near "*" at character 15
+2025-01-09 18:22:58.573 GMT [215113] STATEMENT:  SELECT * FROM *;
+2025-01-09 18:23:05.022 GMT [215113] ERROR:  relation "id_provider" does not exist at character 15
+2025-01-09 18:23:05.022 GMT [215113] STATEMENT:  SELECT * FROM id_provider;
+2025-01-09 18:23:39.375 GMT [215242] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 18:23:39.375 GMT [215242] DETAIL:  Key (id)=(0) already exists.
+2025-01-09 18:23:39.375 GMT [215242] STATEMENT:  INSERT INTO users VALUES (0, 'adele', 'adams', 26, 'M', 'Kazan')
+2025-01-09 18:23:39.379 GMT [215241] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 18:23:39.379 GMT [215241] DETAIL:  Key (id)=(0) already exists.
+2025-01-09 18:23:39.379 GMT [215241] STATEMENT:  INSERT INTO users VALUES (0, 'aaron', 'adams', 31, 'M', 'New-York')
+2025-01-09 18:23:56.224 GMT [214324] LOG:  checkpoint complete: wrote 998 buffers (6.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=99.794 s, sync=0.083 s, total=99.888 s; sync files=310, longest=0.006 s, average=0.001 s; distance=4756 kB, estimate=4756 kB; lsn=0/19F5798, redo lsn=0/19F5760
+2025-01-09 18:23:57.440 GMT [214342] LOG:  checkpoint complete: wrote 1008 buffers (6.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=100.698 s, sync=0.134 s, total=100.843 s; sync files=315, longest=0.009 s, average=0.001 s; distance=4779 kB, estimate=4779 kB; lsn=0/19FB410, redo lsn=0/19FB1B0
+2025-01-09 18:23:57.440 GMT [214333] LOG:  checkpoint complete: wrote 1008 buffers (6.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=100.794 s, sync=0.134 s, total=100.938 s; sync files=315, longest=0.009 s, average=0.001 s; distance=4779 kB, estimate=4779 kB; lsn=0/19FB420, redo lsn=0/19FB1B8
+2025-01-09 18:31:30.123 GMT [215901] ERROR:  syntax error at or near "id_provider" at character 10
+2025-01-09 18:31:30.123 GMT [215901] STATEMENT:  SELECT * id_provider;
+2025-01-09 18:32:16.423 GMT [214324] LOG:  checkpoint starting: time
+2025-01-09 18:32:16.590 GMT [214342] LOG:  checkpoint starting: time
+2025-01-09 18:32:16.619 GMT [214333] LOG:  checkpoint starting: time
+2025-01-09 18:32:17.110 GMT [214342] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.505 s, sync=0.008 s, total=0.520 s; sync files=10, longest=0.002 s, average=0.001 s; distance=26 kB, estimate=4304 kB; lsn=0/1A01CF0, redo lsn=0/1A01CB8
+2025-01-09 18:32:17.137 GMT [214333] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.505 s, sync=0.007 s, total=0.519 s; sync files=10, longest=0.002 s, average=0.001 s; distance=26 kB, estimate=4304 kB; lsn=0/1A01CE8, redo lsn=0/1A01CB0
+2025-01-09 18:32:21.025 GMT [214324] LOG:  checkpoint complete: wrote 46 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.525 s, sync=0.055 s, total=4.602 s; sync files=39, longest=0.007 s, average=0.002 s; distance=154 kB, estimate=4296 kB; lsn=0/1A1C2B0, redo lsn=0/1A1C278
+2025-01-09 18:37:16.124 GMT [214324] LOG:  checkpoint starting: time
+2025-01-09 18:37:16.209 GMT [214342] LOG:  checkpoint starting: time
+2025-01-09 18:37:16.237 GMT [214333] LOG:  checkpoint starting: time
+2025-01-09 18:37:16.741 GMT [214324] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.602 s, sync=0.009 s, total=0.617 s; sync files=6, longest=0.003 s, average=0.002 s; distance=1 kB, estimate=3867 kB; lsn=0/1A1C960, redo lsn=0/1A1C928
+2025-01-09 18:38:12.463 GMT [214333] LOG:  checkpoint complete: wrote 562 buffers (3.4%); 0 WAL file(s) added, 0 removed, 1 recycled; write=56.213 s, sync=0.008 s, total=56.227 s; sync files=12, longest=0.005 s, average=0.001 s; distance=8062 kB, estimate=8062 kB; lsn=0/28FB010, redo lsn=0/21E16D8
+2025-01-09 18:38:12.529 GMT [214342] LOG:  checkpoint complete: wrote 563 buffers (3.4%); 0 WAL file(s) added, 0 removed, 1 recycled; write=56.309 s, sync=0.005 s, total=56.320 s; sync files=12, longest=0.002 s, average=0.001 s; distance=8080 kB, estimate=8080 kB; lsn=0/28FB410, redo lsn=0/21E5DC0
+2025-01-09 18:42:16.563 GMT [214333] LOG:  checkpoint starting: time
+2025-01-09 18:42:16.597 GMT [214342] LOG:  checkpoint starting: time
+2025-01-09 18:42:16.747 GMT [214324] LOG:  checkpoint starting: time
+2025-01-09 18:42:17.066 GMT [214324] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.303 s, sync=0.009 s, total=0.319 s; sync files=4, longest=0.005 s, average=0.003 s; distance=1 kB, estimate=3480 kB; lsn=0/1A1CFD0, redo lsn=0/1A1CF98
+2025-01-09 18:42:17.491 GMT [214333] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.906 s, sync=0.011 s, total=0.928 s; sync files=9, longest=0.002 s, average=0.002 s; distance=7288 kB, estimate=7985 kB; lsn=0/28FF8D0, redo lsn=0/28FF898
+2025-01-09 18:42:17.520 GMT [214342] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.906 s, sync=0.010 s, total=0.924 s; sync files=9, longest=0.002 s, average=0.002 s; distance=7271 kB, estimate=7999 kB; lsn=0/28FFC90, redo lsn=0/28FFC58

@@ -18,6 +18,8 @@ public class UserDao {
 
     private Conn conn;
 
+    private IdProvider idProvider;
+
     private List<string> firstNames =
             (new string[] { "aaron", "abdul", "abe", "abel", "abraham", "adam", "adan", "adolfo", "adolph", "adrian", "abby", "abigail", "adele", "adrian" }).ToList();
 
@@ -39,8 +41,11 @@ public class UserDao {
                                 city VARCHAR(40)
                                 );";
 
-    public UserDao(Conn conn) {
+    public UserDao(Conn conn, IdProvider idProvider) {
         this.conn = conn;
+        this.idProvider = idProvider;
+
+        EnsureTableCreated();
     }
 
     public int EnsureTableCreated() {
@@ -95,7 +100,7 @@ public class UserDao {
         List<User> l = new List<User>();
 
         for (int i = 0; i < n; i++) {
-            l.Add(new User(i.ToString(), rand(firstNames), rand(lastNames), random.Next(99).ToString(), rand(sexes), rand(cities)));
+            l.Add(new User(idProvider.GetId().ToString(), rand(firstNames), rand(lastNames), random.Next(99).ToString(), rand(sexes), rand(cities)));
         }
 
         return l;

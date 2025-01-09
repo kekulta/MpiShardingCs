@@ -8,9 +8,9 @@ public class Conn
     String connString;
     NpgsqlConnection conn;
 
-    public Conn(int port, string username)
+    public Conn(int port, string db, string username)
     {
-        connString = string.Format("Host=localhost; Port={0}; Database=mpi_db; User Id={1}; Password=;", port, username);
+        connString = string.Format("Host=localhost; Port={0}; Database={1}; User Id={2}; Password=;", port, db, username);
         conn = new NpgsqlConnection(connString);
     }
 
