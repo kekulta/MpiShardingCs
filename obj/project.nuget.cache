@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "pkVAFKkw2pCVlszwbAM9F25SS2Ojd4px/vk991wC6XnY8+Sb9zp7XgngyveOSqRmmDg9LW5wlmD13AfsEfyEtA==",
+  "success": true,
+  "projectFilePath": "/home/kekulta/Documents/uni/sem5/Sharp/Course2/Course2.csproj",
+  "expectedPackageFiles": [
+    "/home/kekulta/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/home/kekulta/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/home/kekulta/.nuget/packages/npgsql/9.0.2/npgsql.9.0.2.nupkg.sha512",
+    "/home/kekulta/.nuget/packages/system.diagnostics.diagnosticsource/8.0.1/system.diagnostics.diagnosticsource.8.0.1.nupkg.sha512",
+    "/home/kekulta/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/home/kekulta/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/home/kekulta/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

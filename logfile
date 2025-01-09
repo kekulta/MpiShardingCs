@@ -1,0 +1,132 @@
+2025-01-09 10:34:46.319 GMT [159270] LOG:  starting PostgreSQL 16.3 on x86_64-redhat-linux-gnu, compiled by gcc (GCC) 14.1.1 20240522 (Red Hat 14.1.1-4), 64-bit
+2025-01-09 10:34:46.319 GMT [159270] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2025-01-09 10:34:46.319 GMT [159270] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-01-09 10:34:46.321 GMT [159270] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2025-01-09 10:34:46.324 GMT [159273] LOG:  database system was shut down at 2025-01-09 10:34:06 GMT
+2025-01-09 10:34:46.328 GMT [159270] LOG:  database system is ready to accept connections
+2025-01-09 10:34:46.472 GMT [159279] LOG:  starting PostgreSQL 16.3 on x86_64-redhat-linux-gnu, compiled by gcc (GCC) 14.1.1 20240522 (Red Hat 14.1.1-4), 64-bit
+2025-01-09 10:34:46.472 GMT [159279] LOG:  listening on IPv4 address "127.0.0.1", port 5434
+2025-01-09 10:34:46.472 GMT [159279] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-01-09 10:34:46.473 GMT [159279] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5434"
+2025-01-09 10:34:46.477 GMT [159282] LOG:  database system was shut down at 2025-01-09 10:34:07 GMT
+2025-01-09 10:34:46.481 GMT [159279] LOG:  database system is ready to accept connections
+2025-01-09 10:39:46.394 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 10:39:46.561 GMT [159280] LOG:  checkpoint starting: time
+2025-01-09 10:40:17.792 GMT [160082] ERROR:  relation "users" does not exist at character 15
+2025-01-09 10:40:17.792 GMT [160082] STATEMENT:  Select * from users
+2025-01-09 10:41:26.389 GMT [159271] LOG:  checkpoint complete: wrote 998 buffers (6.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=99.779 s, sync=0.196 s, total=99.996 s; sync files=310, longest=0.009 s, average=0.001 s; distance=4756 kB, estimate=4756 kB; lsn=0/19F5790, redo lsn=0/19F5758
+2025-01-09 10:41:26.417 GMT [159280] LOG:  checkpoint complete: wrote 998 buffers (6.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=99.665 s, sync=0.184 s, total=99.856 s; sync files=310, longest=0.009 s, average=0.001 s; distance=4756 kB, estimate=4756 kB; lsn=0/19F5790, redo lsn=0/19F5758
+2025-01-09 10:41:30.685 GMT [160294] ERROR:  relation "users" does not exist at character 15
+2025-01-09 10:41:30.685 GMT [160294] STATEMENT:  Select * from users
+2025-01-09 10:42:58.521 GMT [160497] ERROR:  relation "users" does not exist at character 15
+2025-01-09 10:42:58.521 GMT [160497] STATEMENT:  Select * from users
+2025-01-09 10:54:46.596 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 10:54:50.076 GMT [159271] LOG:  checkpoint complete: wrote 35 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.415 s, sync=0.054 s, total=3.481 s; sync files=32, longest=0.007 s, average=0.002 s; distance=140 kB, estimate=4295 kB; lsn=0/1A188D0, redo lsn=0/1A18898
+2025-01-09 11:54:46.856 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 11:54:47.391 GMT [159271] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.505 s, sync=0.010 s, total=0.535 s; sync files=12, longest=0.004 s, average=0.001 s; distance=30 kB, estimate=3868 kB; lsn=0/1A20238, redo lsn=0/1A20200
+2025-01-09 12:24:46.838 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 12:24:47.272 GMT [159271] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.404 s, sync=0.009 s, total=0.435 s; sync files=9, longest=0.004 s, average=0.001 s; distance=20 kB, estimate=3483 kB; lsn=0/1A25360, redo lsn=0/1A25328
+2025-01-09 13:05:03.866 GMT [179371] ERROR:  relation "users" does not exist at character 22
+2025-01-09 13:05:03.866 GMT [179371] STATEMENT:  SELECT COUNT(*) FROM users
+2025-01-09 13:09:48.947 GMT [159280] LOG:  checkpoint starting: time
+2025-01-09 13:09:52.425 GMT [159280] LOG:  checkpoint complete: wrote 35 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.420 s, sync=0.037 s, total=3.479 s; sync files=32, longest=0.005 s, average=0.002 s; distance=140 kB, estimate=4295 kB; lsn=0/1A188D0, redo lsn=0/1A18898
+2025-01-09 13:14:47.050 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 13:14:47.381 GMT [159271] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.303 s, sync=0.008 s, total=0.331 s; sync files=3, longest=0.005 s, average=0.003 s; distance=3 kB, estimate=3135 kB; lsn=0/1A26230, redo lsn=0/1A261F8
+2025-01-09 13:14:48.442 GMT [159280] LOG:  checkpoint starting: time
+2025-01-09 13:14:48.864 GMT [159280] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.404 s, sync=0.008 s, total=0.422 s; sync files=4, longest=0.005 s, average=0.002 s; distance=3 kB, estimate=3865 kB; lsn=0/1A196C0, redo lsn=0/1A19688
+2025-01-09 13:29:47.587 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 13:29:48.506 GMT [159271] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.903 s, sync=0.011 s, total=0.920 s; sync files=9, longest=0.003 s, average=0.002 s; distance=37 kB, estimate=2825 kB; lsn=0/1A2F710, redo lsn=0/1A2F6D8
+2025-01-09 13:29:49.104 GMT [159280] LOG:  checkpoint starting: time
+2025-01-09 13:29:50.021 GMT [159280] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.903 s, sync=0.010 s, total=0.917 s; sync files=11, longest=0.002 s, average=0.001 s; distance=35 kB, estimate=3482 kB; lsn=0/1A26668, redo lsn=0/1A224C8
+2025-01-09 13:34:47.606 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 13:34:48.334 GMT [159271] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.706 s, sync=0.010 s, total=0.728 s; sync files=7, longest=0.004 s, average=0.002 s; distance=19 kB, estimate=2545 kB; lsn=0/1A345F0, redo lsn=0/1A345B8
+2025-01-09 13:34:49.090 GMT [159280] LOG:  checkpoint starting: time
+2025-01-09 13:34:49.816 GMT [159280] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.706 s, sync=0.010 s, total=0.726 s; sync files=7, longest=0.003 s, average=0.002 s; distance=18 kB, estimate=3136 kB; lsn=0/1A26E08, redo lsn=0/1A26DD0
+2025-01-09 15:52:05.797 GMT [199838] ERROR:  function max() does not exist at character 8
+2025-01-09 15:52:05.797 GMT [199838] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-01-09 15:52:05.797 GMT [199838] STATEMENT:  SELECT MAX() FROM users
+2025-01-09 15:52:05.797 GMT [199840] ERROR:  function max() does not exist at character 8
+2025-01-09 15:52:05.797 GMT [199840] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-01-09 15:52:05.797 GMT [199840] STATEMENT:  SELECT MAX() FROM users
+2025-01-09 15:56:15.082 GMT [200449] ERROR:  function max() does not exist at character 8
+2025-01-09 15:56:15.082 GMT [200449] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-01-09 15:56:15.082 GMT [200449] STATEMENT:  SELECT MAX() FROM users
+2025-01-09 15:56:15.082 GMT [200448] ERROR:  function max() does not exist at character 8
+2025-01-09 15:56:15.082 GMT [200448] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2025-01-09 15:56:15.082 GMT [200448] STATEMENT:  SELECT MAX() FROM users
+2025-01-09 15:56:18.386 GMT [200449] ERROR:  column "grege" does not exist at character 12
+2025-01-09 15:56:18.386 GMT [200449] STATEMENT:  SELECT MAX(grege) FROM users
+2025-01-09 15:56:18.386 GMT [200448] ERROR:  column "grege" does not exist at character 12
+2025-01-09 15:56:18.386 GMT [200448] STATEMENT:  SELECT MAX(grege) FROM users
+2025-01-09 15:59:49.903 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 15:59:50.120 GMT [159271] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.203 s, sync=0.008 s, total=0.217 s; sync files=3, longest=0.005 s, average=0.003 s; distance=2 kB, estimate=2291 kB; lsn=0/1A350E0, redo lsn=0/1A350A8
+2025-01-09 15:59:51.903 GMT [159280] LOG:  checkpoint starting: time
+2025-01-09 15:59:52.123 GMT [159280] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.203 s, sync=0.007 s, total=0.220 s; sync files=3, longest=0.005 s, average=0.003 s; distance=2 kB, estimate=2823 kB; lsn=0/1A278F8, redo lsn=0/1A278C0
+2025-01-09 16:05:35.904 GMT [201350] ERROR:  column "gerger" does not exist at character 12
+2025-01-09 16:05:35.904 GMT [201350] STATEMENT:  SELECT MIN(gerger) FROM users
+2025-01-09 16:05:35.904 GMT [201349] ERROR:  column "gerger" does not exist at character 12
+2025-01-09 16:05:35.904 GMT [201349] STATEMENT:  SELECT MIN(gerger) FROM users
+2025-01-09 16:26:06.153 GMT [203671] ERROR:  column "name" does not exist at character 12
+2025-01-09 16:26:06.153 GMT [203671] HINT:  Perhaps you meant to reference the column "users.age".
+2025-01-09 16:26:06.153 GMT [203671] STATEMENT:  SELECT MIN(name) FROM users
+2025-01-09 16:26:06.153 GMT [203673] ERROR:  column "name" does not exist at character 12
+2025-01-09 16:26:06.153 GMT [203673] HINT:  Perhaps you meant to reference the column "users.age".
+2025-01-09 16:26:06.153 GMT [203673] STATEMENT:  SELECT MIN(name) FROM users
+2025-01-09 16:26:24.020 GMT [203671] ERROR:  column "name" does not exist at character 12
+2025-01-09 16:26:24.020 GMT [203671] HINT:  Perhaps you meant to reference the column "users.age".
+2025-01-09 16:26:24.020 GMT [203671] STATEMENT:  SELECT MAX(name) FROM users
+2025-01-09 16:26:24.020 GMT [203673] ERROR:  column "name" does not exist at character 12
+2025-01-09 16:26:24.020 GMT [203673] HINT:  Perhaps you meant to reference the column "users.age".
+2025-01-09 16:26:24.020 GMT [203673] STATEMENT:  SELECT MAX(name) FROM users
+2025-01-09 17:12:28.712 GMT [208366] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 17:12:28.712 GMT [208366] DETAIL:  Key (id)=(1784498941) already exists.
+2025-01-09 17:12:28.712 GMT [208366] STATEMENT:  INSERT INTO users VALUES (1784498941, 'abe', 'abbott', 22, 'M', 'Moscow')
+2025-01-09 17:12:28.789 GMT [208365] LOG:  could not receive data from client: Connection reset by peer
+2025-01-09 17:12:28.789 GMT [208365] LOG:  unexpected EOF on client connection with an open transaction
+2025-01-09 17:14:50.375 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 17:14:52.499 GMT [159280] LOG:  checkpoint starting: time
+2025-01-09 17:15:00.566 GMT [159271] LOG:  checkpoint complete: wrote 102 buffers (0.6%); 1 WAL file(s) added, 0 removed, 0 recycled; write=10.144 s, sync=0.004 s, total=10.191 s; sync files=12, longest=0.002 s, average=0.001 s; distance=5553 kB, estimate=5553 kB; lsn=0/1FA1730, redo lsn=0/1FA16F8
+2025-01-09 17:15:02.897 GMT [159280] LOG:  checkpoint complete: wrote 104 buffers (0.6%); 1 WAL file(s) added, 0 removed, 0 recycled; write=10.344 s, sync=0.005 s, total=10.398 s; sync files=12, longest=0.002 s, average=0.001 s; distance=5666 kB, estimate=5666 kB; lsn=0/1FB0370, redo lsn=0/1FB0338
+2025-01-09 17:19:46.818 GMT [209010] LOG:  could not receive data from client: Connection reset by peer
+2025-01-09 17:19:46.818 GMT [209010] LOG:  unexpected EOF on client connection with an open transaction
+2025-01-09 17:19:46.819 GMT [209008] LOG:  could not receive data from client: Connection reset by peer
+2025-01-09 17:19:46.819 GMT [209008] LOG:  unexpected EOF on client connection with an open transaction
+2025-01-09 17:19:50.589 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 17:19:52.997 GMT [159280] LOG:  checkpoint starting: time
+2025-01-09 17:21:56.706 GMT [209434] LOG:  could not receive data from client: Connection reset by peer
+2025-01-09 17:21:56.706 GMT [209434] LOG:  unexpected EOF on client connection with an open transaction
+2025-01-09 17:21:56.707 GMT [209436] LOG:  could not receive data from client: Connection reset by peer
+2025-01-09 17:21:56.708 GMT [209436] LOG:  unexpected EOF on client connection with an open transaction
+2025-01-09 17:23:48.478 GMT [209718] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 17:23:48.478 GMT [209718] DETAIL:  Key (id)=(0) already exists.
+2025-01-09 17:23:48.478 GMT [209718] STATEMENT:  INSERT INTO users VALUES (0, 'adolfo', 'acosta', 15, 'M', 'Moscow')
+2025-01-09 17:23:48.479 GMT [209720] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 17:23:48.479 GMT [209720] DETAIL:  Key (id)=(0) already exists.
+2025-01-09 17:23:48.479 GMT [209720] STATEMENT:  INSERT INTO users VALUES (0, 'abraham', 'adkins', 41, 'M', 'Moscow')
+2025-01-09 17:24:20.056 GMT [159271] LOG:  checkpoint complete: wrote 582 buffers (3.6%); 0 WAL file(s) added, 0 removed, 3 recycled; write=269.437 s, sync=0.010 s, total=269.467 s; sync files=12, longest=0.007 s, average=0.001 s; distance=44270 kB, estimate=44270 kB; lsn=0/6D84E80, redo lsn=0/4ADD1E0
+2025-01-09 17:24:22.054 GMT [159280] LOG:  checkpoint complete: wrote 566 buffers (3.5%); 0 WAL file(s) added, 0 removed, 3 recycled; write=269.031 s, sync=0.007 s, total=269.058 s; sync files=12, longest=0.003 s, average=0.001 s; distance=44724 kB, estimate=44724 kB; lsn=0/6FB9630, redo lsn=0/4B5D338
+2025-01-09 17:24:50.085 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 17:24:52.084 GMT [159280] LOG:  checkpoint starting: time
+2025-01-09 17:24:52.612 GMT [159280] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 2 recycled; write=0.502 s, sync=0.013 s, total=0.528 s; sync files=8, longest=0.008 s, average=0.002 s; distance=37234 kB, estimate=43975 kB; lsn=0/6FB9B98, redo lsn=0/6FB9B60
+2025-01-09 17:25:43.399 GMT [159271] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 2 recycled; write=53.287 s, sync=0.001 s, total=53.314 s; sync files=12, longest=0.001 s, average=0.001 s; distance=37344 kB, estimate=43578 kB; lsn=0/76CB920, redo lsn=0/6F55580
+2025-01-09 17:29:50.499 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 17:29:51.032 GMT [159271] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 3 recycled; write=0.505 s, sync=0.010 s, total=0.533 s; sync files=12, longest=0.004 s, average=0.001 s; distance=38181 kB, estimate=43038 kB; lsn=0/949EBD0, redo lsn=0/949EB98
+2025-01-09 17:29:52.712 GMT [159280] LOG:  checkpoint starting: time
+2025-01-09 17:29:53.239 GMT [159280] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.505 s, sync=0.010 s, total=0.527 s; sync files=10, longest=0.004 s, average=0.001 s; distance=15324 kB, estimate=41109 kB; lsn=0/7EB0DB8, redo lsn=0/7EB0D80
+2025-01-09 17:34:50.132 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 17:34:52.279 GMT [159280] LOG:  checkpoint starting: time
+2025-01-09 17:35:43.983 GMT [159271] LOG:  checkpoint complete: wrote 537 buffers (3.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=53.820 s, sync=0.019 s, total=53.851 s; sync files=10, longest=0.010 s, average=0.002 s; distance=7681 kB, estimate=39502 kB; lsn=0/9C1F020, redo lsn=0/9C1EFE8
+2025-01-09 17:35:46.028 GMT [159280] LOG:  checkpoint complete: wrote 536 buffers (3.3%); 0 WAL file(s) added, 0 removed, 1 recycled; write=53.716 s, sync=0.021 s, total=53.749 s; sync files=10, longest=0.012 s, average=0.003 s; distance=7678 kB, estimate=37766 kB; lsn=0/8630628, redo lsn=0/86305F0
+2025-01-09 17:39:29.792 GMT [211086] ERROR:  syntax error at or near "PRIMARY" at character 30
+2025-01-09 17:39:29.792 GMT [211086] STATEMENT:  CREATE TABLE id_provider (id PRIMARY KEY);
+2025-01-09 17:39:51.041 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 17:39:54.301 GMT [159271] LOG:  checkpoint complete: wrote 33 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.220 s, sync=0.032 s, total=3.260 s; sync files=30, longest=0.002 s, average=0.002 s; distance=147 kB, estimate=35567 kB; lsn=0/9C43F38, redo lsn=0/9C43F00
+2025-01-09 17:40:31.865 GMT [211086] ERROR:  syntax error at or near ")" at character 33
+2025-01-09 17:40:31.865 GMT [211086] STATEMENT:  INSERT INTO id_provider VALUES () RETURNING id
+	;
+2025-01-09 17:40:42.318 GMT [211086] ERROR:  syntax error at or near ")" at character 38
+2025-01-09 17:40:42.318 GMT [211086] STATEMENT:  INSERT INTO id_provider (id) VALUES () RETURNING id;
+2025-01-09 17:42:24.477 GMT [211086] ERROR:  syntax error at or near ")" at character 25
+2025-01-09 17:42:24.477 GMT [211086] STATEMENT:  INSERT INTO id_provider() VALUES();
+2025-01-09 17:44:51.400 GMT [159271] LOG:  checkpoint starting: time
+2025-01-09 17:44:55.973 GMT [159271] LOG:  checkpoint complete: wrote 46 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.525 s, sync=0.036 s, total=4.573 s; sync files=35, longest=0.002 s, average=0.002 s; distance=179 kB, estimate=32028 kB; lsn=0/9C70EB0, redo lsn=0/9C70E78
