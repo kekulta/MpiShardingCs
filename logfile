@@ -211,3 +211,166 @@
 2025-01-09 18:42:17.066 GMT [214324] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.303 s, sync=0.009 s, total=0.319 s; sync files=4, longest=0.005 s, average=0.003 s; distance=1 kB, estimate=3480 kB; lsn=0/1A1CFD0, redo lsn=0/1A1CF98
 2025-01-09 18:42:17.491 GMT [214333] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.906 s, sync=0.011 s, total=0.928 s; sync files=9, longest=0.002 s, average=0.002 s; distance=7288 kB, estimate=7985 kB; lsn=0/28FF8D0, redo lsn=0/28FF898
 2025-01-09 18:42:17.520 GMT [214342] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.906 s, sync=0.010 s, total=0.924 s; sync files=9, longest=0.002 s, average=0.002 s; distance=7271 kB, estimate=7999 kB; lsn=0/28FFC90, redo lsn=0/28FFC58
+2025-01-09 20:52:18.014 GMT [214324] LOG:  checkpoint starting: time
+2025-01-09 20:52:18.328 GMT [214324] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.302 s, sync=0.005 s, total=0.315 s; sync files=4, longest=0.002 s, average=0.002 s; distance=1 kB, estimate=3132 kB; lsn=0/1A1D740, redo lsn=0/1A1D708
+2025-01-09 20:52:18.688 GMT [214333] LOG:  checkpoint starting: time
+2025-01-09 20:52:18.728 GMT [214342] LOG:  checkpoint starting: time
+2025-01-09 20:56:48.044 GMT [214342] LOG:  checkpoint complete: wrote 3645 buffers (22.2%); 0 WAL file(s) added, 4 removed, 0 recycled; write=269.276 s, sync=0.016 s, total=269.317 s; sync files=10, longest=0.011 s, average=0.002 s; distance=68937 kB, estimate=68937 kB; lsn=0/14305890, redo lsn=0/6C52360
+2025-01-09 20:56:48.107 GMT [214333] LOG:  checkpoint complete: wrote 3662 buffers (22.4%); 0 WAL file(s) added, 4 removed, 0 recycled; write=269.378 s, sync=0.014 s, total=269.420 s; sync files=10, longest=0.008 s, average=0.002 s; distance=68819 kB, estimate=68819 kB; lsn=0/140A9F28, redo lsn=0/6C34660
+2025-01-09 20:57:18.075 GMT [214342] LOG:  checkpoint starting: time
+2025-01-09 20:57:18.138 GMT [214333] LOG:  checkpoint starting: time
+2025-01-09 21:01:48.101 GMT [214333] LOG:  checkpoint complete: wrote 6901 buffers (42.1%); 0 WAL file(s) added, 0 removed, 15 recycled; write=269.910 s, sync=0.005 s, total=269.964 s; sync files=3, longest=0.005 s, average=0.002 s; distance=241598 kB, estimate=241598 kB; lsn=0/1B4B21B0, redo lsn=0/15824028
+2025-01-09 21:01:48.102 GMT [214342] LOG:  checkpoint complete: wrote 7073 buffers (43.2%); 0 WAL file(s) added, 0 removed, 15 recycled; write=269.973 s, sync=0.004 s, total=270.028 s; sync files=3, longest=0.004 s, average=0.002 s; distance=244085 kB, estimate=244085 kB; lsn=0/1B4AE7D0, redo lsn=0/15AAF988
+2025-01-09 21:03:12.161 GMT [226329] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:03:12.161 GMT [226329] DETAIL:  Key (id)=(1500000) already exists.
+2025-01-09 21:03:12.161 GMT [226329] STATEMENT:  INSERT INTO users VALUES (1500000, 'adolph', 'adkins', 81, 'M', 'Moscow')
+2025-01-09 21:03:51.840 GMT [226445] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:03:51.840 GMT [226445] DETAIL:  Key (id)=(1700000) already exists.
+2025-01-09 21:03:51.840 GMT [226445] STATEMENT:  INSERT INTO users VALUES (1700000, 'abdul', 'adkins', 5, 'M', 'Kazan')
+2025-01-09 21:06:13.327 GMT [226656] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:06:13.327 GMT [226656] DETAIL:  Key (id)=(1900000) already exists.
+2025-01-09 21:06:13.327 GMT [226656] STATEMENT:  INSERT INTO users VALUES (1900000, 'aaron', 'adams', 62, 'M', 'New-York')
+2025-01-09 21:06:50.547 GMT [226722] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:06:50.547 GMT [226722] DETAIL:  Key (id)=(2000000) already exists.
+2025-01-09 21:06:50.547 GMT [226722] STATEMENT:  INSERT INTO users VALUES (2000000, 'abe', 'acosta', 37, 'M', 'Moscow')
+2025-01-09 21:06:50.557 GMT [226721] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:06:50.557 GMT [226721] DETAIL:  Key (id)=(2100000) already exists.
+2025-01-09 21:06:50.557 GMT [226721] STATEMENT:  INSERT INTO users VALUES (2100000, 'abdul', 'adams', 31, 'M', 'Kazan')
+2025-01-09 21:07:18.150 GMT [214342] LOG:  checkpoint starting: time
+2025-01-09 21:07:18.202 GMT [214333] LOG:  checkpoint starting: time
+2025-01-09 21:07:18.615 GMT [214324] LOG:  checkpoint starting: time
+2025-01-09 21:07:18.937 GMT [214324] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.303 s, sync=0.006 s, total=0.322 s; sync files=4, longest=0.002 s, average=0.002 s; distance=2 kB, estimate=2819 kB; lsn=0/1A1E2B8, redo lsn=0/1A1E280
+2025-01-09 21:09:56.049 GMT [227055] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:09:56.049 GMT [227055] DETAIL:  Key (id)=(2300000) already exists.
+2025-01-09 21:09:56.049 GMT [227055] STATEMENT:  INSERT INTO users VALUES (2300000, 'abigail', 'abbott', 78, 'M', 'Kazan')
+2025-01-09 21:09:56.053 GMT [227053] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:09:56.053 GMT [227053] DETAIL:  Key (id)=(2200000) already exists.
+2025-01-09 21:09:56.053 GMT [227053] STATEMENT:  INSERT INTO users VALUES (2200000, 'adrian', 'adams', 6, 'M', 'Moscow')
+2025-01-09 21:11:48.077 GMT [214342] LOG:  checkpoint complete: wrote 11839 buffers (72.3%); 0 WAL file(s) added, 0 removed, 6 recycled; write=269.880 s, sync=0.007 s, total=269.928 s; sync files=7, longest=0.007 s, average=0.001 s; distance=92155 kB, estimate=228892 kB; lsn=0/1B4AFC78, redo lsn=0/1B4AE938
+2025-01-09 21:11:48.078 GMT [214333] LOG:  checkpoint complete: wrote 11841 buffers (72.3%); 0 WAL file(s) added, 0 removed, 6 recycled; write=269.843 s, sync=0.005 s, total=269.877 s; sync files=7, longest=0.004 s, average=0.001 s; distance=94777 kB, estimate=226916 kB; lsn=0/1B4B2FD8, redo lsn=0/1B4B25E8
+2025-01-09 21:11:59.257 GMT [227279] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:11:59.257 GMT [227279] DETAIL:  Key (id)=(2400000) already exists.
+2025-01-09 21:11:59.257 GMT [227279] STATEMENT:  INSERT INTO users VALUES (2400000, 'adan', 'acosta', 87, 'M', 'Kazan')
+2025-01-09 21:11:59.260 GMT [227281] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:11:59.260 GMT [227281] DETAIL:  Key (id)=(2500000) already exists.
+2025-01-09 21:11:59.260 GMT [227281] STATEMENT:  INSERT INTO users VALUES (2500000, 'adolfo', 'adkins', 9, 'M', 'New-York')
+2025-01-09 21:12:18.107 GMT [214342] LOG:  checkpoint starting: time
+2025-01-09 21:12:18.108 GMT [214333] LOG:  checkpoint starting: time
+2025-01-09 21:12:18.237 GMT [214342] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.003 s, total=0.130 s; sync files=2, longest=0.002 s, average=0.002 s; distance=5 kB, estimate=206003 kB; lsn=0/1B4AFE20, redo lsn=0/1B4AFDE8
+2025-01-09 21:12:18.238 GMT [214333] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.003 s, total=0.130 s; sync files=2, longest=0.002 s, average=0.002 s; distance=2 kB, estimate=204224 kB; lsn=0/1B4B3178, redo lsn=0/1B4B3140
+2025-01-09 21:12:19.037 GMT [214324] LOG:  checkpoint starting: time
+2025-01-09 21:12:19.356 GMT [214324] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.303 s, sync=0.006 s, total=0.320 s; sync files=4, longest=0.002 s, average=0.002 s; distance=2 kB, estimate=2537 kB; lsn=0/1A1ECE0, redo lsn=0/1A1ECA8
+2025-01-09 21:20:26.373 GMT [228195] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:20:26.373 GMT [228195] DETAIL:  Key (id)=(2700000) already exists.
+2025-01-09 21:20:26.373 GMT [228195] STATEMENT:  INSERT INTO users VALUES (2700000, 'adrian', 'acosta', 7, 'M', 'Moscow')
+2025-01-09 21:20:26.378 GMT [228193] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:20:26.378 GMT [228193] DETAIL:  Key (id)=(2600000) already exists.
+2025-01-09 21:20:26.378 GMT [228193] STATEMENT:  INSERT INTO users VALUES (2600000, 'adrian', 'acosta', 2, 'M', 'Kazan')
+2025-01-09 21:22:18.420 GMT [214342] LOG:  checkpoint starting: time
+2025-01-09 21:22:18.438 GMT [214333] LOG:  checkpoint starting: time
+2025-01-09 21:22:18.533 GMT [214342] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.002 s, total=0.114 s; sync files=2, longest=0.002 s, average=0.001 s; distance=5 kB, estimate=185403 kB; lsn=0/1B4B1270, redo lsn=0/1B4B1238
+2025-01-09 21:22:18.548 GMT [214333] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.002 s, total=0.110 s; sync files=2, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=183802 kB; lsn=0/1B4B3C60, redo lsn=0/1B4B3C28
+2025-01-09 21:22:19.469 GMT [214324] LOG:  checkpoint starting: time
+2025-01-09 21:22:19.790 GMT [214324] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.303 s, sync=0.007 s, total=0.322 s; sync files=4, longest=0.003 s, average=0.002 s; distance=2 kB, estimate=2284 kB; lsn=0/1A1F670, redo lsn=0/1A1F638
+2025-01-09 21:27:18.591 GMT [214342] LOG:  checkpoint starting: time
+2025-01-09 21:27:18.647 GMT [214333] LOG:  checkpoint starting: time
+2025-01-09 21:27:19.846 GMT [214324] LOG:  checkpoint starting: time
+2025-01-09 21:27:20.674 GMT [214324] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.806 s, sync=0.012 s, total=0.829 s; sync files=8, longest=0.004 s, average=0.002 s; distance=19 kB, estimate=2057 kB; lsn=0/1A24628, redo lsn=0/1A245F0
+2025-01-09 21:27:25.030 GMT [214342] LOG:  checkpoint complete: wrote 65 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.418 s, sync=0.009 s, total=6.440 s; sync files=10, longest=0.002 s, average=0.001 s; distance=799 kB, estimate=166943 kB; lsn=0/1B5791B8, redo lsn=0/1B579180
+2025-01-09 21:27:25.087 GMT [214333] LOG:  checkpoint complete: wrote 65 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.419 s, sync=0.014 s, total=6.440 s; sync files=10, longest=0.005 s, average=0.002 s; distance=800 kB, estimate=165502 kB; lsn=0/1B57BCD8, redo lsn=0/1B57BCA0
+2025-01-09 21:32:18.130 GMT [214342] LOG:  checkpoint starting: time
+2025-01-09 21:32:18.186 GMT [214333] LOG:  checkpoint starting: time
+2025-01-09 21:32:19.774 GMT [214324] LOG:  checkpoint starting: time
+2025-01-09 21:32:20.593 GMT [214324] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.803 s, sync=0.010 s, total=0.819 s; sync files=8, longest=0.002 s, average=0.002 s; distance=20 kB, estimate=1854 kB; lsn=0/1A29638, redo lsn=0/1A29600
+2025-01-09 21:33:17.191 GMT [229304] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:33:17.191 GMT [229304] DETAIL:  Key (id)=(4200000) already exists.
+2025-01-09 21:33:17.191 GMT [229304] STATEMENT:  INSERT INTO users VALUES (4200000, 'abby', 'adkins', 9, 'M', 'New-York')
+2025-01-09 21:33:17.192 GMT [229303] ERROR:  duplicate key value violates unique constraint "users_pkey"
+2025-01-09 21:33:17.192 GMT [229303] DETAIL:  Key (id)=(4300000) already exists.
+2025-01-09 21:33:17.192 GMT [229303] STATEMENT:  INSERT INTO users VALUES (4300000, 'adrian', 'acosta', 86, 'M', 'Kazan')
+2025-01-09 21:34:06.011 GMT [214333] LOG:  checkpoint complete: wrote 673 buffers (4.1%); 0 WAL file(s) added, 1 removed, 0 recycled; write=107.793 s, sync=0.014 s, total=107.825 s; sync files=11, longest=0.008 s, average=0.002 s; distance=15543 kB, estimate=150506 kB; lsn=0/1F8CE858, redo lsn=0/1C4A9A08
+2025-01-09 21:34:06.051 GMT [214342] LOG:  checkpoint complete: wrote 674 buffers (4.1%); 0 WAL file(s) added, 1 removed, 0 recycled; write=107.895 s, sync=0.011 s, total=107.921 s; sync files=11, longest=0.005 s, average=0.001 s; distance=15554 kB, estimate=151804 kB; lsn=0/1F922610, redo lsn=0/1C4A9998
+2025-01-09 21:35:54.731 GMT [214323] LOG:  received fast shutdown request
+2025-01-09 21:35:54.733 GMT [214323] LOG:  aborting any active transactions
+2025-01-09 21:35:54.739 GMT [214323] LOG:  background worker "logical replication launcher" (PID 214329) exited with exit code 1
+2025-01-09 21:35:54.739 GMT [214324] LOG:  shutting down
+2025-01-09 21:35:54.741 GMT [214324] LOG:  checkpoint starting: shutdown immediate
+2025-01-09 21:35:54.759 GMT [214324] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.008 s, total=0.020 s; sync files=7, longest=0.002 s, average=0.002 s; distance=8 kB, estimate=1669 kB; lsn=0/1A2B680, redo lsn=0/1A2B680
+2025-01-09 21:35:54.783 GMT [214323] LOG:  database system is shut down
+2025-01-09 21:35:54.834 GMT [214332] LOG:  received fast shutdown request
+2025-01-09 21:35:54.835 GMT [214332] LOG:  aborting any active transactions
+2025-01-09 21:35:54.836 GMT [214332] LOG:  background worker "logical replication launcher" (PID 214338) exited with exit code 1
+2025-01-09 21:35:54.839 GMT [214333] LOG:  shutting down
+2025-01-09 21:35:54.840 GMT [214333] LOG:  checkpoint starting: shutdown immediate
+2025-01-09 21:35:55.100 GMT [214333] LOG:  checkpoint complete: wrote 5253 buffers (32.1%); 0 WAL file(s) added, 1 removed, 5 recycled; write=0.225 s, sync=0.018 s, total=0.262 s; sync files=10, longest=0.006 s, average=0.002 s; distance=99185 kB, estimate=145374 kB; lsn=0/22585E38, redo lsn=0/22585E38
+2025-01-09 21:35:55.126 GMT [214332] LOG:  database system is shut down
+2025-01-09 21:35:55.136 GMT [214341] LOG:  received fast shutdown request
+2025-01-09 21:35:55.137 GMT [214341] LOG:  aborting any active transactions
+2025-01-09 21:35:55.139 GMT [214341] LOG:  background worker "logical replication launcher" (PID 214347) exited with exit code 1
+2025-01-09 21:35:55.142 GMT [214342] LOG:  shutting down
+2025-01-09 21:35:55.144 GMT [214342] LOG:  checkpoint starting: shutdown immediate
+2025-01-09 21:35:55.410 GMT [214342] LOG:  checkpoint complete: wrote 5253 buffers (32.1%); 0 WAL file(s) added, 0 removed, 6 recycled; write=0.235 s, sync=0.014 s, total=0.268 s; sync files=10, longest=0.003 s, average=0.002 s; distance=99175 kB, estimate=146541 kB; lsn=0/22583948, redo lsn=0/22583948
+2025-01-09 21:35:55.435 GMT [214341] LOG:  database system is shut down
+2025-01-09 21:36:18.294 GMT [229661] LOG:  starting PostgreSQL 16.3 on x86_64-redhat-linux-gnu, compiled by gcc (GCC) 14.1.1 20240522 (Red Hat 14.1.1-4), 64-bit
+2025-01-09 21:36:18.294 GMT [229661] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-01-09 21:36:18.294 GMT [229661] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-01-09 21:36:18.295 GMT [229661] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-01-09 21:36:18.299 GMT [229664] LOG:  database system was shut down at 2025-01-09 21:36:08 GMT
+2025-01-09 21:36:18.303 GMT [229661] LOG:  database system is ready to accept connections
+2025-01-09 21:36:18.414 GMT [229674] LOG:  starting PostgreSQL 16.3 on x86_64-redhat-linux-gnu, compiled by gcc (GCC) 14.1.1 20240522 (Red Hat 14.1.1-4), 64-bit
+2025-01-09 21:36:18.414 GMT [229674] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2025-01-09 21:36:18.414 GMT [229674] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-01-09 21:36:18.415 GMT [229674] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2025-01-09 21:36:18.418 GMT [229677] LOG:  database system was shut down at 2025-01-09 21:36:10 GMT
+2025-01-09 21:36:18.423 GMT [229674] LOG:  database system is ready to accept connections
+2025-01-09 21:36:18.524 GMT [229684] LOG:  starting PostgreSQL 16.3 on x86_64-redhat-linux-gnu, compiled by gcc (GCC) 14.1.1 20240522 (Red Hat 14.1.1-4), 64-bit
+2025-01-09 21:36:18.524 GMT [229684] LOG:  listening on IPv4 address "127.0.0.1", port 5434
+2025-01-09 21:36:18.524 GMT [229684] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-01-09 21:36:18.525 GMT [229684] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5434"
+2025-01-09 21:36:18.528 GMT [229687] LOG:  database system was shut down at 2025-01-09 21:36:12 GMT
+2025-01-09 21:36:18.532 GMT [229684] LOG:  database system is ready to accept connections
+2025-01-09 21:40:07.036 GMT [229661] LOG:  received fast shutdown request
+2025-01-09 21:40:07.040 GMT [229661] LOG:  aborting any active transactions
+2025-01-09 21:40:07.042 GMT [229661] LOG:  background worker "logical replication launcher" (PID 229667) exited with exit code 1
+2025-01-09 21:40:07.042 GMT [229662] LOG:  shutting down
+2025-01-09 21:40:07.044 GMT [229662] LOG:  checkpoint starting: shutdown immediate
+2025-01-09 21:40:07.376 GMT [229662] LOG:  checkpoint complete: wrote 1007 buffers (6.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.037 s, sync=0.289 s, total=0.334 s; sync files=313, longest=0.007 s, average=0.001 s; distance=4771 kB, estimate=4771 kB; lsn=0/19F93F8, redo lsn=0/19F93F8
+2025-01-09 21:40:07.387 GMT [229661] LOG:  database system is shut down
+2025-01-09 21:40:07.446 GMT [229674] LOG:  received fast shutdown request
+2025-01-09 21:40:07.448 GMT [229674] LOG:  aborting any active transactions
+2025-01-09 21:40:07.454 GMT [229674] LOG:  background worker "logical replication launcher" (PID 229680) exited with exit code 1
+2025-01-09 21:40:07.456 GMT [229675] LOG:  shutting down
+2025-01-09 21:40:07.458 GMT [229675] LOG:  checkpoint starting: shutdown immediate
+2025-01-09 21:40:07.918 GMT [229675] LOG:  checkpoint complete: wrote 9915 buffers (60.5%); 0 WAL file(s) added, 0 removed, 8 recycled; write=0.431 s, sync=0.007 s, total=0.463 s; sync files=314, longest=0.002 s, average=0.001 s; distance=134477 kB, estimate=134477 kB; lsn=0/98A3BD8, redo lsn=0/98A3BD8
+2025-01-09 21:40:07.934 GMT [229674] LOG:  database system is shut down
+2025-01-09 21:40:07.949 GMT [229684] LOG:  received fast shutdown request
+2025-01-09 21:40:07.950 GMT [229684] LOG:  aborting any active transactions
+2025-01-09 21:40:07.952 GMT [229684] LOG:  background worker "logical replication launcher" (PID 229690) exited with exit code 1
+2025-01-09 21:40:07.952 GMT [229685] LOG:  shutting down
+2025-01-09 21:40:07.953 GMT [229685] LOG:  checkpoint starting: shutdown immediate
+2025-01-09 21:40:08.264 GMT [229685] LOG:  checkpoint complete: wrote 998 buffers (6.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.037 s, sync=0.268 s, total=0.313 s; sync files=310, longest=0.010 s, average=0.001 s; distance=4756 kB, estimate=4756 kB; lsn=0/19F5758, redo lsn=0/19F5758
+2025-01-09 21:40:08.274 GMT [229684] LOG:  database system is shut down
+2025-01-09 21:40:25.091 GMT [230065] LOG:  starting PostgreSQL 16.3 on x86_64-redhat-linux-gnu, compiled by gcc (GCC) 14.1.1 20240522 (Red Hat 14.1.1-4), 64-bit
+2025-01-09 21:40:25.091 GMT [230065] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-01-09 21:40:25.091 GMT [230065] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-01-09 21:40:25.092 GMT [230065] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-01-09 21:40:25.096 GMT [230068] LOG:  database system was shut down at 2025-01-09 21:40:14 GMT
+2025-01-09 21:40:25.100 GMT [230065] LOG:  database system is ready to accept connections
+2025-01-09 21:40:25.209 GMT [230078] LOG:  starting PostgreSQL 16.3 on x86_64-redhat-linux-gnu, compiled by gcc (GCC) 14.1.1 20240522 (Red Hat 14.1.1-4), 64-bit
+2025-01-09 21:40:25.209 GMT [230078] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2025-01-09 21:40:25.210 GMT [230078] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-01-09 21:40:25.211 GMT [230078] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2025-01-09 21:40:25.214 GMT [230081] LOG:  database system was shut down at 2025-01-09 21:40:15 GMT
+2025-01-09 21:40:25.218 GMT [230078] LOG:  database system is ready to accept connections
+2025-01-09 21:40:25.323 GMT [230088] LOG:  starting PostgreSQL 16.3 on x86_64-redhat-linux-gnu, compiled by gcc (GCC) 14.1.1 20240522 (Red Hat 14.1.1-4), 64-bit
+2025-01-09 21:40:25.323 GMT [230088] LOG:  listening on IPv4 address "127.0.0.1", port 5434
+2025-01-09 21:40:25.323 GMT [230088] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2025-01-09 21:40:25.324 GMT [230088] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5434"
+2025-01-09 21:40:25.328 GMT [230091] LOG:  database system was shut down at 2025-01-09 21:40:17 GMT
+2025-01-09 21:40:25.332 GMT [230088] LOG:  database system is ready to accept connections
+2025-01-09 21:45:25.194 GMT [230066] LOG:  checkpoint starting: time
+2025-01-09 21:45:25.243 GMT [230079] LOG:  checkpoint starting: time
+2025-01-09 21:45:25.428 GMT [230089] LOG:  checkpoint starting: time
+2025-01-09 21:47:05.864 GMT [230066] LOG:  checkpoint complete: wrote 1007 buffers (6.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=100.601 s, sync=0.062 s, total=100.671 s; sync files=313, longest=0.004 s, average=0.001 s; distance=4772 kB, estimate=4772 kB; lsn=0/19F94A8, redo lsn=0/19F9470
+2025-01-09 21:49:55.040 GMT [230079] LOG:  checkpoint complete: wrote 5461 buffers (33.3%); 0 WAL file(s) added, 0 removed, 4 recycled; write=269.771 s, sync=0.006 s, total=269.797 s; sync files=314, longest=0.005 s, average=0.001 s; distance=69749 kB, estimate=69749 kB; lsn=0/596DB58, redo lsn=0/596DB20
+2025-01-09 21:49:55.043 GMT [230089] LOG:  checkpoint complete: wrote 5460 buffers (33.3%); 0 WAL file(s) added, 0 removed, 4 recycled; write=269.582 s, sync=0.005 s, total=269.615 s; sync files=314, longest=0.005 s, average=0.001 s; distance=69748 kB, estimate=69748 kB; lsn=0/596D5B0, redo lsn=0/596D578

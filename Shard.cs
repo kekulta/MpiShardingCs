@@ -7,11 +7,11 @@ using Npgsql;
 public class Shard {
     private static int[] ports = {5433, 5434};
     private static int idPort = 5432;
-    private static int count = ports.Count();
     private static string username = "kekulta";
     private static string db = "mpi_db";
     private static string idDb = "id_provider_db";
 
+    private int count;
     private Conn conn;
     private Conn idConn;
     private UserDao dao;
@@ -20,6 +20,7 @@ public class Shard {
     private Stopwatch stopWatch = new Stopwatch();
 
     public Shard(Intracommunicator comm) {
+        this.count = comm.Size;
         conn = new Conn(ports[comm.Rank], db, username);
         conn.Open();
         idConn = new Conn(idPort, idDb, username);
@@ -27,7 +28,6 @@ public class Shard {
         idProvider = new IdProvider(idConn, comm.Rank);
         dao = new UserDao(conn, idProvider);
         this.comm = comm;
-
         Console.WriteLine("Process {0} opened connection on port {1} as {2}",
                 comm.Rank, ports[comm.Rank], username);
     }

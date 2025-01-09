@@ -28,13 +28,17 @@ public class IdProvider {
         int id = currentId++;
         if(currentId == batchSize) {
             UpdateBatch();
+            currentId = 0;
         }
 
-        return id + (currentBatch * batchSize);
+        int newId = id + (currentBatch * batchSize);
+
+        return newId;
     }
 
     private void UpdateBatch() {
         currentBatch = conn.Read(string.Format(getBatchString, shard), (r => readInt(r, "id")))[0];
+        Console.WriteLine("On shard {0} new batch requested: {1}", shard, currentBatch);
     }
 
     private void EnsureTableCreated() {

@@ -10,7 +10,7 @@ public class Conn
 
     public Conn(int port, string db, string username)
     {
-        connString = string.Format("Host=localhost; Port={0}; Database={1}; User Id={2}; Password=;", port, db, username);
+        connString = string.Format("Host=localhost; Port={0}; Database={1}; User Id={2}; Password=; Include Error Detail=true;", port, db, username);
         conn = new NpgsqlConnection(connString);
     }
 
